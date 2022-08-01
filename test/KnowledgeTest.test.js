@@ -76,7 +76,6 @@ describe("Knowledge Test", function () {
   it("start() adds the calling address to 'players'", async () => {
     await contract.start();
     const firstPlayer = await contract.players(0);
-
     expect(firstPlayer).to.be.eq(owner.address);
   });
 
